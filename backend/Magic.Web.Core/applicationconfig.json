@@ -1,0 +1,105 @@
+{
+  //如果前端不代理的话，又是axios请求的话，需要添加以下代码
+  "CorsAccessorSettings": {
+    "WithExposedHeaders": [ "Content-Disposition" ]
+  },
+  //动态api配置
+  //"DynamicApiControllerSettings": {
+  //  "DefaultRoutePrefix": "api666" //默认路由前缀，默认api，但是如果action上面写死route的话 就无效了特性的优先级最高
+  //},
+  "SystemSettings": {
+    "SuperAdminViewAllData": false, //超管是否可以查看所有租户的数据
+    "IsGlobalRequestLog": false //是否开启全局请求日志
+  },
+  "AppSettings": {
+    "InjectSpecificationDocument": true //是否开启swagger
+  },
+  "SpecificationDocumentSettings": {
+    "DocumentTitle": "Magic",
+    "DocExpansionState": "None",
+    "GroupOpenApiInfos": [
+      {
+        "Group": "Default",
+        "Title": "Magic.NET通用权限管理平台",
+        "Description": "前后端分离架构，开箱即用，紧随前沿技术。<br/>作者By 蛋蛋,QQ群901868674<br/><a href='https://gitee.com/zhengguojing/admin-net-sqlsugar'>https://gitee.com/zhengguojing/admin-net-sqlsugar</a>",
+        "Version": "1.0.0"
+      },
+      {
+        "Group": "FlowCenter",
+        "Title": "流程中心",
+        "Description": "流程中心模块或插件。<br/>作者By MonsterUncle,QQ295228902",
+        "Version": "1.0.0"
+      },
+      {
+        "Group": "Application",
+        "Title": "业务模块",
+        "Description": "独立业务模块",
+        "Version": "1.0.0"
+      }
+    ]
+  },
+  "JWTSettings": {
+    "ValidateIssuerSigningKey": true, // 是否验证密钥，bool 类型，默认true
+    "IssuerSigningKey": "3c1cbc3f546eda35168c3aa3cb91780fbe703f0996c6d123ea96dc85c70bbc0a", // 密钥，string 类型，必须是复杂密钥，长度大于16
+    "ValidateIssuer": true, // 是否验证签发方，bool 类型，默认true
+    "ValidIssuer": "magic", // 签发方，string 类型
+    "ValidateAudience": true, // 是否验证签收方，bool 类型，默认true
+    "ValidAudience": "magic", // 签收方，string 类型
+    "ValidateLifetime": true, // 是否验证过期时间，bool 类型，默认true，建议true
+    "ExpiredTime": 1440, // 过期时间，long 类型，单位分钟，默认20分钟
+    "ClockSkew": 5 // 过期时间容错值，long 类型，单位秒，默认5秒
+  },
+  "Cache": {
+    "CacheType": "MemoryCache", // RedisCache
+    "RedisConnectionString": "127.0.0.1:6379,password=,defaultDatabase=2"
+  },
+  "SnowId": {
+    "WorkerId": "1" // 取值范围0~63,默认1
+  },
+  "OAuth": {
+    "Wechat": {
+      "app_id": "wx2959fdd3abc05362",
+      "app_key": "829f65b2be0652bcd50ea8cb820fd7fa",
+      "redirect_uri": "http://127.0.0.1:56868/oauth/wechatcallback",
+      "scope": "snsapi_userinfo"
+    }
+  },
+  "UploadFile": {
+    // 阿里云OSS配置
+    "Aliyun": {
+      "path": "Magic/Upload",
+      "maxSize": 1048576,
+      "contentType": [ "image/jpg", "image/png", "image/jpeg", "image/gif", "image/bmp", "text/plain", "application/pdf", "application/msword", "application/vnd.ms-excel", "application/vnd.openxmlformats-officedocument.presentationml.presentation" ]
+    },
+    // 头像
+    "Avatar": {
+      "path": "Upload/Avatar",
+      "maxSize": 1048576,
+      "contentType": [ "image/jpg", "image/png", "image/jpeg", "image/gif" ]
+    },
+    // 文档
+    "Document": {
+      "path": "Upload/Document",
+      "maxSize": 1048576,
+      "contentType": [ "image/jpg", "image/png", "image/jpeg", "image/gif", "image/bmp", "text/plain", "application/pdf", "application/msword", "application/vnd.ms-excel", "application/vnd.openxmlformats-officedocument.presentationml.presentation" ]
+    },
+    // 商店
+    "Shop": {
+      "path": "Upload/Shop",
+      "maxSize": 1048576,
+      "contentType": [ "image/jpg", "image/png", "image/jpeg", "image/gif" ]
+    },
+    // 富文本
+    "Editor": {
+      "path": "Upload/Editor",
+      "maxSize": 1048576,
+      "contentType": [ "image/jpg", "image/png", "image/jpeg", "image/gif" ]
+    },
+    // 默认
+    "Default": {
+      "path": "Upload/Default",
+      "maxSize": 41943040,
+      "contentType": [ "image/jpg", "image/png", "image/jpeg", "image/gif", "image/bmp", "text/plain", "application/pdf", "application/msword", "application/vnd.ms-excel", "application/vnd.openxmlformats-officedocument.presentationml.presentation" ]
+    }
+  }
+}

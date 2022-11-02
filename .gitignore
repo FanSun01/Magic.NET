@@ -1,0 +1,31 @@
+# Build and Release Folders
+bin-debug/
+bin-release/
+[Oo]bj/
+[Bb]in/
+
+# Other files and folders
+.settings/
+
+# Executables
+*.swf
+*.air
+*.ipa
+*.apk
+
+# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+# should NOT be excluded as they contain compiler settings and other important
+# information for Eclipse / Flash Builder.
+/backend/Magic.Web.Entry/logs
+/backend/.vs
+/backend/.idea
+/backend/Magic.Web.Entry/publish
+/backend/Magic.Web.Entry/Properties/PublishProfiles
+/backend/Magic.Core/Magic.Core.csproj.user
+/backend/Magic.Web.Entry/Magic.Web.Entry.csproj.user
+/backend/Magic.Web.Entry/Magic.db
+/.vs
+/.idea
+/backend/Magic.Web.Entry/wwwroot/Upload/Avatar
+/backend/Magic.Web.Entry/Magic.db
+/backend/Magic.Web.Entry/wwwroot/Upload/Default

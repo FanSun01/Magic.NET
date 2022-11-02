@@ -1,0 +1,1871 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Magic.FlowCenter</name>
+    </assembly>
+    <members>
+        <member name="T:Magic.FlowCenter.Entity.FlcCustomForm">
+            <summary>
+            自定义表单
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcCustomForm.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcCustomForm.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcCustomForm.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcCustomForm.CreatedTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcCustomForm.CreatedUserId">
+            <summary>
+            创建者Id
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcCustomForm.CreatedUserName">
+            <summary>
+            创建者名称
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.FlcDBEntityTenant">
+            <summary>
+            自定义租户基类实体
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcDBEntityTenant.TenantId">
+            <summary>
+            租户id
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.FlcDEntityBase">
+            <summary>
+            自定义实体基类
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcDEntityBase.CreatedTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcDEntityBase.UpdatedTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcDEntityBase.CreatedUserId">
+            <summary>
+            创建者Id
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcDEntityBase.CreatedUserName">
+            <summary>
+            创建者名称
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcDEntityBase.UpdatedUserId">
+            <summary>
+            修改者Id
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcDEntityBase.UpdatedUserName">
+            <summary>
+            修改者名称
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcDEntityBase.IsDeleted">
+            <summary>
+            软删除
+            </summary>
+        </member>
+        <member name="M:Magic.FlowCenter.Entity.FlcDEntityBase.UpdateColumn">
+            <summary>
+            更新信息列
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Entity.FlcDEntityBase.FalseDeleteColumn">
+            <summary>
+            假删除的列，包含更新信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.AutoIncrementEntity">
+            <summary>
+            递增主键实体基类
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.AutoIncrementEntity.Id">
+            <summary>
+            主键Id
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.PrimaryKeyEntity">
+            <summary>
+            主键实体基类
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.PrimaryKeyEntity.Id">
+            <summary>
+            主键Id
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.FlcFlowinstance">
+            <summary>
+            创 建：超级管理员
+            日 期：2020-07-14 09:18
+            描 述：我的流程实体类
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.InstanceSchemeId">
+            <summary>
+            流程实例模板Id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.Code">
+            <summary>
+            实例编号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.CustomName">
+            <summary>
+            自定义名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.ActivityId">
+            <summary>
+            当前节点ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.ActivityType">
+            <summary>
+            当前节点类型（0会签节点）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.ActivityName">
+            <summary>
+            当前节点名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.PreviousId">
+            <summary>
+            前一个ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.SchemeContent">
+            <summary>
+            流程模板内容
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.SchemeId">
+            <summary>
+            流程模板ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.DbName">
+            <summary>
+            数据库名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.FrmData">
+            <summary>
+            表单数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.FrmType">
+            <summary>
+            表单类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.FrmContentData">
+            <summary>
+            表单中的字段
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.FrmContentParse">
+            <summary>
+            表单字段（冗余)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.FrmContent">
+            <summary>
+            表单参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.FrmId">
+            <summary>
+            表单ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.SchemeType">
+            <summary>
+            流程类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.FlowLevel">
+            <summary>
+            等级
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.IsFinish">
+            <summary>
+            是否完成
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.MakerList">
+            <summary>
+            执行人
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.OrgId">
+            <summary>
+            所属部门
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.Status">
+             <summary>
+              状态标识
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.NextNodeDesignateType">
+            <summary>
+            如果下个执行节点是运行时指定执行者。需要传指定的类型
+            <para>取值为RUNTIME_SPECIAL_ROLE、RUNTIME_SPECIAL_USER</para>
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.NextNodeDesignates">
+            <summary>
+            如果下个执行节点是运行时指定执行者。该值表示具体的执行者
+            <para>如果NodeDesignateType为RUNTIME_SPECIAL_ROLE，则该值为指定的角色</para>
+            <para>如果NodeDesignateType为RUNTIME_SPECIAL_USER，则该值为指定的用户</para>
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.NextMakerName">
+            <summary>
+            下个节点执行人
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.CurrentMakerName">
+            <summary>
+            当前节点执行人
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowinstance.CurrentNodeDesignateType">
+            <summary>
+            当前节点执行类型
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.FlcFlowInstanceOperationHistory">
+            <summary>
+            工作流实例操作记录
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowInstanceOperationHistory.InstanceId">
+            <summary>
+            实例进程Id
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowInstanceOperationHistory.Content">
+            <summary>
+            操作内容
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowInstanceOperationHistory.CreatedTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowInstanceOperationHistory.CreatedUserId">
+            <summary>
+            创建用户主键
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowInstanceOperationHistory.CreatedUserName">
+            <summary>
+            创建用户
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.FlcFlowInstanceTransitionHistory">
+            <summary>
+            工作流实例流转历史记录
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowInstanceTransitionHistory.InstanceId">
+            <summary>
+            实例Id
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowInstanceTransitionHistory.FromNodeId">
+            <summary>
+            开始节点Id
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowInstanceTransitionHistory.FromNodeType">
+            <summary>
+            开始节点类型
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowInstanceTransitionHistory.FromNodeName">
+            <summary>
+            开始节点名称
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowInstanceTransitionHistory.ToNodeId">
+            <summary>
+            结束节点Id
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowInstanceTransitionHistory.ToNodeType">
+            <summary>
+            结束节点类型
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowInstanceTransitionHistory.ToNodeName">
+            <summary>
+            结束节点名称
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowInstanceTransitionHistory.TransitionSate">
+            <summary>
+            转化状态
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowInstanceTransitionHistory.IsFinish">
+            <summary>
+            是否结束
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowInstanceTransitionHistory.CreatedTime">
+            <summary>
+            转化时间
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowInstanceTransitionHistory.CreatedUserId">
+            <summary>
+            创建用户主键
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowInstanceTransitionHistory.CreatedUserName">
+            <summary>
+            创建用户
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.FlcFlowscheme">
+             <summary>
+             流程
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowscheme.SchemeCode">
+             <summary>
+              流程编号
+             默认值: 
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowscheme.SchemeName">
+             <summary>
+              流程名称
+             默认值: 
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowscheme.SchemeType">
+             <summary>
+              流程类型
+             默认值: 
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowscheme.SchemeVersion">
+             <summary>
+              流程版本
+             默认值: 
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowscheme.SchemeCanUser">
+             <summary>
+              流程使用人
+             默认值: 
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowscheme.SchemeContent">
+             <summary>
+              流程内容
+             默认值: 
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowscheme.FrmId">
+             <summary>
+              表单Id
+             默认值: 
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowscheme.FrmType">
+             <summary>
+              表单类型
+             默认值: 
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowscheme.AuthorizeType">
+             <summary>
+              权限类型
+             默认值: 
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowscheme.OrgId">
+             <summary>
+              组织Id
+             默认值: 
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowscheme.Active">
+             <summary>
+              
+             默认值: 
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowscheme.Status">
+             <summary>
+              状态
+             默认值: 
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowscheme.Sort">
+             <summary>
+              排序
+             默认值: 
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcFlowscheme.Remark">
+             <summary>
+              备注
+             默认值: 
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.FlcForm">
+             <summary>
+             表单
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcForm.Name">
+             <summary>
+              表单名称
+             默认值: 
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcForm.FrmType">
+             <summary>
+              表单类型
+             默认值: 
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcForm.WebId">
+             <summary>
+              自定义表单
+             默认值: 
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcForm.Fields">
+             <summary>
+              字段数
+             默认值: 
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcForm.ContentData">
+             <summary>
+              字段
+             默认值: 
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcForm.ContentParse">
+             <summary>
+              字段格式化
+             默认值: 
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcForm.Content">
+             <summary>
+              表单内容
+             默认值: 
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcForm.DbName">
+             <summary>
+              数据库备用
+             默认值: 
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcForm.OrgId">
+             <summary>
+              组织id
+             默认值: 
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcForm.Active">
+             <summary>
+              
+             默认值: 
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcForm.Status">
+             <summary>
+              状态
+             默认值: 
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcForm.Sort">
+             <summary>
+              排序
+             默认值: 
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcForm.Remark">
+             <summary>
+              备注
+             默认值: 
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.FlcInstanceEntity">
+            <summary>
+            自定义表单实体
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlcInstanceEntity.FlowInstanceId">
+            <summary>
+            申请流程Id
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.Flow">
+            <summary>
+            流程
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Flow.config">
+            <summary>
+            流程配置
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Flow.attr">
+            <summary>
+            参数
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Flow.status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Flow.linkList">
+            <summary>
+            连线
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Flow.nodeList">
+            <summary>
+            节点
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Flow.areaList">
+            <summary>
+            泳道
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.FlowConfig">
+            <summary>
+            流程配置
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowConfig.showGrid">
+            <summary>
+            网格
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowConfig.showGridText">
+            <summary>
+            文字
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowConfig.showGridIcon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.Attr">
+            <summary>
+            参数
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.FlowArea">
+            <summary>
+            流程泳道
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowArea.id">
+            <summary>
+            泳道Id
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowArea.name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowArea.type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowArea.icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowArea.x">
+            <summary>
+            x坐标
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowArea.y">
+            <summary>
+            y坐标
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowArea.width">
+            <summary>
+            宽度
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowArea.height">
+            <summary>
+            高度
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.FlowLine">
+            <summary>
+            流程连线
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowLine.id">
+            <summary>
+            线Id
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowLine.label">
+            <summary>
+            显示
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowLine.type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowLine.sourceId">
+            <summary>
+            源头节点
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowLine.targetId">
+            <summary>
+            目标节点
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowLine.name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowLine.cls">
+            <summary>
+            连接样式
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowLine.Compares">
+            <summary> 分支条件 </summary>
+        </member>
+        <member name="M:Magic.FlowCenter.Entity.FlowLine.Compare(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            连线比较
+            </summary>
+            <param name="frmDataJson"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.DataCompare">
+            <summary>
+             分支条件
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.DataCompare.Operation">
+            <summary>操作类型比如大于/等于/小于</summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.DataCompare.FieldName">
+            <summary> form种的字段名称 </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.DataCompare.FieldType">
+            <summary> 字段类型："form"：为表单中的字段，后期扩展系统表等. </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.DataCompare.Value">
+            <summary>实际的值</summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.DataCompare.ValueName">
+            <summary>
+            实际值的显示值
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.DataCompare.Name">
+            <summary>
+            显示值
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.DataCompare.Condition">
+            <summary>
+            条件关系
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.LineStyle">
+            <summary>
+            连接样式
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.LineStyle.linkType">
+            <summary>
+            连接类型
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.LineStyle.linkColor">
+            <summary>
+            连接颜色
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.LineStyle.linkThickness">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.FlowNode">
+            <summary>
+            流程节点
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowNode.id">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowNode.name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowNode.type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowNode.icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowNode.x">
+            <summary>
+            x坐标
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowNode.y">
+            <summary>
+            y左边
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowNode.width">
+            <summary>
+            宽度
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowNode.height">
+            <summary>
+            高度
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowNode.setInfo">
+            <summary>
+            节点的附加数据项
+            </summary>
+            <value>The set information.</value>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.Setinfo">
+            <summary>
+            节点详细
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Setinfo.NodeDesignate">
+            <summary>
+            节点执行权限类型
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Setinfo.NodeDesignateData">
+            <summary>
+            选择值
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Setinfo.NodeDesignateName">
+            <summary>
+            选择显示
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Setinfo.CurrentDepart">
+            <summary>
+            当前部门
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Setinfo.NodeCode">
+            <summary>
+            节点编号
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Setinfo.NodeName">
+            <summary>
+            节点名称
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Setinfo.ThirdPartyUrl">
+            <summary>
+             流程执行时，三方回调的URL地址
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Setinfo.NodeRejectType">
+            <summary>
+            驳回节点0"前一步"1"第一步"2"某一步" 3"不处理"
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Setinfo.Taged">
+            <summary>
+            节点状态
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Setinfo.UserName">
+            <summary>
+            用户名称
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Setinfo.UserId">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Setinfo.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Setinfo.TagedTime">
+            <summary>
+            节点时间
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Setinfo.NodeConfluenceType">
+            <summary>
+             节点会签方式，all/空：默认为全部通过，one ：至少有一个通过
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Setinfo.ConfluenceOk">
+            <summary>
+            会签通过的个数
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Setinfo.ConfluenceNo">
+            <summary>
+            会签拒绝的个数
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.Tag">
+            <summary>
+            节点执行结果标签
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Tag.Taged">
+            <summary>
+             1: 通过
+             2：不通过
+             3：驳回
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Tag.UserId">
+            <summary>
+            用户id
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Tag.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Tag.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Tag.TagedTime">
+            <summary>
+            时间
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.TagState">
+            <summary>
+             1: 通过
+             2：不通过
+             3：驳回
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.FlowRuntime">
+            <summary>
+            流程运行类
+            </summary>
+        </member>
+        <member name="M:Magic.FlowCenter.Entity.FlowRuntime.#ctor(Magic.FlowCenter.Entity.FlcFlowinstance)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Magic.FlowCenter.Entity.FlowRuntime.InitFlow(Magic.FlowCenter.Entity.Flow)">
+            <summary>
+            获取工作流信息
+            </summary>
+            <param name="schemeContentJson"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Entity.FlowRuntime.InitNodes(Magic.FlowCenter.Entity.Flow)">
+            <summary>
+            获取工作流节点的字典列表:key节点id
+            </summary>
+            <param name="schemeContentJson"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Entity.FlowRuntime.GetNextNodeId(System.String)">
+            <summary>
+            获取下一个节点
+            </summary>
+        </member>
+        <member name="M:Magic.FlowCenter.Entity.FlowRuntime.GetPreviousNodeId(System.String)">
+            <summary>
+            获取上一个节点
+            </summary>
+        </member>
+        <member name="M:Magic.FlowCenter.Entity.FlowRuntime.GetNextNode(System.String)">
+            <summary>
+            获取下一个节点
+            </summary>
+            <param name="nodeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Entity.FlowRuntime.GetNextNodeType">
+            <summary>
+            获取实例接下来运行的状态
+            </summary>
+            <returns>-1无法运行,0会签开始,1会签结束,2一般节点,4流程运行结束</returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Entity.FlowRuntime.GetNodeType(System.String)">
+            <summary>
+            获取节点类型 0会签开始,1会签结束,2一般节点,开始节点,4流程运行结束
+            </summary>
+            <param name="nodeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Entity.FlowRuntime.RemoveNode(System.String)">
+            <summary>
+            删除节点
+            </summary>
+            <param name="nodeId"></param>
+        </member>
+        <member name="M:Magic.FlowCenter.Entity.FlowRuntime.RemoveNodes">
+            <summary>
+            删除全部节点
+            </summary>
+        </member>
+        <member name="M:Magic.FlowCenter.Entity.FlowRuntime.NodeConfluence(System.String,Magic.FlowCenter.Entity.Tag)">
+            <summary>
+            节点会签审核
+            </summary>
+            <param name="nodeId">会签时，currentNodeId是会签开始节点。这个表示当前正在处理的节点</param>
+            <param name="tag"></param>
+            <returns>-1不通过,1等待,其它通过</returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Entity.FlowRuntime.GetPreNode(System.String)">
+            <summary>
+            获取上一个节点
+            </summary>
+            <param name="nodeId"></param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:Magic.FlowCenter.Entity.FlowRuntime.RejectNode(System.String)">
+            <summary>
+            驳回
+            </summary>
+            <param name="rejectType">驳回类型。null:使用节点配置的驳回类型/0:前一步/1:第一步/2：指定节点，使用NodeRejectStep</param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Entity.FlowRuntime.MakeTagNode(System.String,Magic.FlowCenter.Entity.Tag)">
+            <summary>
+             标记节点1通过，2不通过，3驳回
+             </summary>
+             <param name="nodeId"></param>
+        </member>
+        <member name="M:Magic.FlowCenter.Entity.FlowRuntime.ToSchemeObj">
+            <summary>
+            获取流程
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Entity.FlowRuntime.NotifyThirdParty(System.Net.Http.HttpClient,Magic.FlowCenter.Entity.Tag)">
+            <summary>
+            通知三方系统，节点执行情况
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowRuntime.flow">
+            <summary>
+            流程
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowRuntime.flowInstanceId">
+            <summary>
+            运行实例的Id
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowRuntime.startNodeId">
+            <summary>
+            开始节点的ID
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowRuntime.currentNodeId">
+            <summary>
+            当前节点的ID
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowRuntime.currentNodeType">
+            <summary>
+            当前节点类型 0会签开始,1会签结束,2一般节点,开始节点,4流程运行结束
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowRuntime.currentNode">
+            <summary>
+            当前节点的对象
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowRuntime.nextNodeId">
+            <summary>
+            下一个节点
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowRuntime.nextNodeType">
+            <summary>
+            下一个节点类型 -1无法运行,0会签开始,1会签结束,2一般节点,4流程运行结束
+            </summary>
+            <value>The type of the next node.</value>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowRuntime.nextNode">
+            <summary>
+            下一个节点对象
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowRuntime.previousId">
+            <summary>
+            上一个节点
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowRuntime.Nodes">
+            <summary>
+            实例节点集合
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowRuntime.Lines">
+            <summary>
+            流程实例中所有的线段
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowRuntime.FromNodeLines">
+            <summary>
+            从节点发出的线段集合
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowRuntime.ToNodeLines">
+            <summary>
+            到达节点的线段集合
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FlowRuntime.FrmData">
+            <summary>
+            表单数据
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.FormUtil">
+            <summary>
+            表单工具
+            </summary>
+        </member>
+        <member name="M:Magic.FlowCenter.Entity.FormUtil.SetValue(System.String)">
+            <summary>
+            获取值
+            </summary>
+            <param name="content"></param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Entity.FormUtil.SetFormValue(System.Collections.Generic.List{Magic.FlowCenter.Entity.FormValue},System.Collections.Generic.List{System.String})">
+            <summary>
+            表单赋值
+            </summary>
+            <param name="list"></param>
+            <param name="temp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Entity.FormUtil.SetValueByWeb(System.String)">
+            <summary>
+            自定义表单设值
+            </summary>
+            <param name="webForm"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.FormValue">
+            <summary>
+            表单设计类
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FormValue.id">
+            <summary>
+            表id
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FormValue.label">
+            <summary>
+            说明
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FormValue.index">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FormValue.tag">
+            <summary>
+            标签
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FormValue.span">
+            <summary>
+            跨度
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FormValue.columns">
+            <summary>
+            表单
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FormValue.name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.FormEx">
+            <summary>
+            表单
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FormEx.span">
+            <summary>
+            跨度
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.FormEx.list">
+            <summary>
+            表单设计列表
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.NodeDesignate">
+            <summary>
+            节点执行类
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.NodeDesignate.NodeDesignateType">
+            <summary>
+            如果下个执行节点是运行时指定执行者。需要传指定的类型
+            <para>取值为RUNTIME_SPECIAL_ROLE、RUNTIME_SPECIAL_USER</para>
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.NodeDesignate.NodeDesignates">
+            <summary>
+            如果下个执行节点是运行时指定执行者。该值表示具体的执行者
+            <para>如果NodeDesignateType为RUNTIME_SPECIAL_ROLE，则该值为指定的角色</para>
+            <para>如果NodeDesignateType为RUNTIME_SPECIAL_USER，则该值为指定的用户</para>
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Entity.Verification">
+            <summary>
+            流程审核类
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Verification.FlowInstanceId">
+            <summary>
+            流程实例Id
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Verification.VerificationFinally">
+            <summary>
+            1:同意；2：不同意；3：驳回
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Verification.VerificationOpinion">
+            <summary>
+            审核意见
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Verification.NodeRejectStep">
+            <summary>
+            驳回的步骤，即驳回到的节点ID
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Entity.Verification.NodeRejectType">
+            <summary>
+            驳回类型。null:使用节点配置的驳回类型/0:前一步/1:第一步/2：指定节点，使用NodeRejectStep
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.FormType">
+            <summary>
+            表单类型
+            </summary>
+        </member>
+        <member name="F:Magic.FlowCenter.FormType.DESIGNFORM">
+            <summary>
+            正常
+            </summary>
+        </member>
+        <member name="F:Magic.FlowCenter.FormType.CUSTOMFORM">
+            <summary>
+            停用
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Service.FlcFlowinstanceDto">
+            <summary>
+            工作流输出参数
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceDto.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceDto.InstanceSchemeId">
+            <summary>
+            InstanceSchemeId
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceDto.Code">
+            <summary>
+            Code
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceDto.CustomName">
+            <summary>
+            CustomName
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceDto.ActivityId">
+            <summary>
+            ActivityId
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceDto.ActivityType">
+            <summary>
+            ActivityType
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceDto.ActivityName">
+            <summary>
+            ActivityName
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceDto.PreviousId">
+            <summary>
+            PreviousId
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceDto.SchemeContent">
+            <summary>
+            SchemeContent
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceDto.SchemeId">
+            <summary>
+            SchemeId
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceDto.DbName">
+            <summary>
+            DbName
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceDto.FrmData">
+            <summary>
+            FrmData
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceDto.FrmType">
+            <summary>
+            FrmType
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceDto.FrmContentData">
+            <summary>
+            FrmContentData
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceDto.FrmContentParse">
+            <summary>
+            FrmContentParse
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceDto.FrmId">
+            <summary>
+            FrmId
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceDto.SchemeType">
+            <summary>
+            SchemeType
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceDto.FlowLevel">
+            <summary>
+            FlowLevel
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceDto.IsFinish">
+            <summary>
+            IsFinish
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceDto.FrmContent">
+            <summary>
+            FrmContent
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceDto.MakerList">
+            <summary>
+            MakerList
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceDto.OrgId">
+            <summary>
+            OrgId
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceDto.Active">
+            <summary>
+            Active
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceDto.Remark">
+            <summary>
+            Remark
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Service.FlcFlowinstanceInput">
+            <summary>
+            工作流输入参数
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceInput.InstanceSchemeId">
+            <summary>
+            InstanceSchemeId
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceInput.Code">
+            <summary>
+            Code
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceInput.CustomName">
+            <summary>
+            CustomName
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceInput.ActivityId">
+            <summary>
+            ActivityId
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceInput.ActivityType">
+            <summary>
+            ActivityType
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceInput.ActivityName">
+            <summary>
+            ActivityName
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceInput.PreviousId">
+            <summary>
+            PreviousId
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceInput.SchemeContent">
+            <summary>
+            SchemeContent
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceInput.SchemeId">
+            <summary>
+            SchemeId
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceInput.DbName">
+            <summary>
+            DbName
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceInput.FrmData">
+            <summary>
+            FrmData
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceInput.FrmType">
+            <summary>
+            FrmType
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceInput.FrmContentData">
+            <summary>
+            FrmContentData
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceInput.FrmContentParse">
+            <summary>
+            FrmContentParse
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceInput.FrmId">
+            <summary>
+            FrmId
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceInput.SchemeType">
+            <summary>
+            SchemeType
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceInput.FlowLevel">
+            <summary>
+            FlowLevel
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceInput.IsFinish">
+            <summary>
+            IsFinish
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceInput.FrmContent">
+            <summary>
+            FrmContent
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceInput.MakerList">
+            <summary>
+            MakerList
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceInput.OrgId">
+            <summary>
+            OrgId
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceInput.Active">
+            <summary>
+            Active
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowinstanceInput.Remark">
+            <summary>
+            Remark
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.DeleteFlcFlowinstanceInput.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.UpdateFlcFlowinstanceInput.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Service.FlcFlowinstanceOutput">
+            <summary>
+            工作流输出参数
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Service.FlcCustomFormService">
+            <summary>
+            自定义表格服务
+            </summary>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcCustomFormService.Add(System.Int64,System.String)">
+            <summary>
+            新增
+            </summary>
+            <param name="flowInstanceId"></param>
+            <param name="frmData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcCustomFormService.Edit(System.Int64,System.String)">
+            <summary>
+            编辑
+            </summary>
+            <param name="flowInstanceId"></param>
+            <param name="frmData"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Magic.FlowCenter.Service.FlcFlowinstanceService">
+            <summary>
+            工作流服务
+            </summary>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFlowinstanceService.Page(Magic.FlowCenter.Service.FlcFlowinstanceInput)">
+            <summary>
+            分页查询工作流
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFlowinstanceService.Get(System.Int64)">
+            <summary>
+            获取工作流
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFlowinstanceService.List(Magic.FlowCenter.Service.FlcFlowinstanceInput)">
+            <summary>
+            获取工作流列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>Verification
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFlowinstanceService.QueryHistories(Magic.FlowCenter.Service.QueryeFlcFlowinstanceInput)">
+            <summary>
+            获取历史
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFlowinstanceService.NodeReject(Magic.FlowCenter.Entity.Verification)">
+            <summary>
+            驳回
+            如果NodeRejectStep不为空，优先使用；否则按照NodeRejectType驳回
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFlowinstanceService.NodeVerification(Magic.FlowCenter.Entity.Verification)">
+            <summary>
+            节点审核
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFlowinstanceService.GetNextMakers(Magic.FlowCenter.Entity.FlowRuntime,Magic.FlowCenter.Entity.NodeDesignate,System.Int64)">
+            <summary>
+            寻找下一步的执行人
+            一般用于本节点审核完成后，修改流程实例的当前执行人，可以做到通知等功能
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFlowinstanceService.GetForkNodeMakers(Magic.FlowCenter.Entity.FlowRuntime,System.String,System.Int64)">
+            <summary>
+            获取会签开始节点的所有可执行者
+            </summary>
+            <param name="wfruntime"></param>
+            <param name="forkNodeId"></param>
+            <param name="flowCreator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFlowinstanceService.GetNodeMarkers(Magic.FlowCenter.Entity.FlowNode,System.Int64)">
+            <summary>
+            寻找该节点执行人
+            </summary>
+            <param name="node"></param>
+            <param name="flowCreator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFlowinstanceService.CheckNodeDesignate(Magic.FlowCenter.Entity.NodeDesignate)">
+            <summary>
+            判定节点需要选择执行人或执行角色
+            </summary>
+            <param name="request"></param>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFlowinstanceService.GetForVerification(Magic.FlowCenter.Service.QueryeFlcFlowinstanceInput)">
+            <summary>
+            返回用于处理流程节点
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFlowinstanceService.AddTransHistory(Magic.FlowCenter.Entity.FlowRuntime)">
+            <summary>
+            添加扭转记录
+            </summary>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFlowinstanceService.AddRejectTransHistory(Magic.FlowCenter.Entity.FlowRuntime,Magic.FlowCenter.Entity.FlowRuntime)">
+            <summary>
+            添加扭转记录
+            </summary>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFlowinstanceService.Verification(Magic.FlowCenter.Entity.Verification)">
+            <summary>
+            节点处理
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFlowinstanceService.Add(Magic.FlowCenter.Entity.FlcFlowinstance)">
+            <summary>
+            新增流程实例
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFlowinstanceService.Update(Magic.FlowCenter.Entity.FlcFlowinstance)">
+            <summary>
+            编辑流程实例
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFlowinstanceService.Delete(Magic.FlowCenter.Service.DeleteFlcFlowinstanceInput)">
+            <summary>
+            删除流程实例
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFlowinstanceService.Cancel(Magic.FlowCenter.Service.DeleteFlcFlowinstanceInput)">
+            <summary>
+            撤销流程实例
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Magic.FlowCenter.Service.FlcFlowschemeInput">
+            <summary>
+            流程管理输入参数
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.UpdateFlcFlowschemeInput.Id">
+            <summary>
+            流程Id
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Service.FlcFlowschemeOutput">
+            <summary>
+            流程管理输出参数
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowschemeOutput.Id">
+            <summary>
+            流程Id
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowschemeOutput.NextNodeDesignateType">
+            <summary>
+            如果下个执行节点是运行时指定执行者。需要传指定的类型
+            <para>取值为RUNTIME_SPECIAL_ROLE、RUNTIME_SPECIAL_USER</para>
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFlowschemeOutput.NextNodeDesignates">
+            <summary>
+            如果下个执行节点是运行时指定执行者。该值表示具体的执行者
+            <para>如果NodeDesignateType为RUNTIME_SPECIAL_ROLE，则该值为指定的角色</para>
+            <para>如果NodeDesignateType为RUNTIME_SPECIAL_USER，则该值为指定的用户</para>
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Service.FlcFlowschemeService">
+            <summary>
+            流程管理服务
+            </summary>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFlowschemeService.Page(Magic.FlowCenter.Service.PageFlcFlowschemeInput)">
+            <summary>
+            分页查询流程管理
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFlowschemeService.Add(Magic.FlowCenter.Service.AddFlcFlowschemeInput)">
+            <summary>
+            增加流程管理
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFlowschemeService.Delete(Magic.FlowCenter.Service.DeleteFlcFlowschemeInput)">
+            <summary>
+            删除流程管理
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFlowschemeService.Update(Magic.FlowCenter.Service.UpdateFlcFlowschemeInput)">
+            <summary>
+            更新流程管理
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFlowschemeService.Get(Magic.FlowCenter.Service.DeleteFlcFlowschemeInput)">
+            <summary>
+            获取流程管理
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFlowschemeService.List(Magic.FlowCenter.Service.FlcFlowschemeInput)">
+            <summary>
+            获取流程管理列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Magic.FlowCenter.Service.FlcFormInput">
+            <summary>
+            组织机构参数
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFormInput.OrgId">
+            <summary>
+            组织Id
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFormInput.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFormInput.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFormInput.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFormInput.Status">
+            <summary>
+            状态（字典 0正常 1停用 2删除）
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.AddFlcFormInput.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.DeleteFlcFormInput.Id">
+            <summary>
+            机构Id
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.UpdateFlcFormInput.Id">
+            <summary>
+            机构Id
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Service.FlcFormOutput">
+            <summary>
+            组织机构参数
+            </summary>
+        </member>
+        <member name="P:Magic.FlowCenter.Service.FlcFormOutput.Id">
+            <summary>
+            表单Id
+            </summary>
+        </member>
+        <member name="T:Magic.FlowCenter.Service.FlcFormManageService">
+            <summary>
+            表单管理
+            </summary>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFormManageService.QueryFormPageList(Magic.FlowCenter.Service.PageFlcFormInput)">
+            <summary>
+            分页查询表单
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFormManageService.GetFormList(Magic.FlowCenter.Service.FlcFormInput)">
+            <summary>
+            获取表单列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFormManageService.AddForm(Magic.FlowCenter.Service.AddFlcFormInput)">
+            <summary>
+            增加表单
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFormManageService.DeleteForm(Magic.FlowCenter.Service.DeleteFlcFormInput)">
+            <summary>
+            删除表单
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFormManageService.UpdateForm(Magic.FlowCenter.Service.UpdateFlcFormInput)">
+            <summary>
+            更新表单
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Magic.FlowCenter.Service.FlcFormManageService.GetForm(Magic.FlowCenter.Service.QueryFlcFormInput)">
+            <summary>
+            获取表单信息
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

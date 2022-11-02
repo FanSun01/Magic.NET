@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\config",
+    "\\src\\core",
+    "\\src\\mock",
+    "\\src\\store",
+    "\\src\\store\\modules"
+  ],
+  "SelectedNode": "\\src\\core\\lazy_use.js",
+  "PreviewInSolutionExplorer": false
+}

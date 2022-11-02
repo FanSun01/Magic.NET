@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DocumentationFile>Magic.Web.Core.xml</DocumentationFile>
+    <AssemblyName>Magic.Web.Core</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Magic.Web.Core.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Magic.Web.Core.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Magic.Application\Magic.Application.csproj" />
+    <ProjectReference Include="..\Magic.FlowCenter\Magic.FlowCenter.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="applicationconfig.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="dbsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

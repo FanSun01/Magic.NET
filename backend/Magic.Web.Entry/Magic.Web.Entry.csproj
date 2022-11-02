@@ -1,0 +1,92 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>aa1cd362-1bdb-4ac9-ad5c-461b3b5b1003</UserSecretsId>
+		<SatelliteResourceLanguages>en-US</SatelliteResourceLanguages>
+		<AssemblyName>Magic.Web.Entry</AssemblyName>
+		<PublishReadyToRunComposite>true</PublishReadyToRunComposite>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Remove="wwwroot\Captcha\Font\站酷酷黑体.ttf" />
+		<Content Remove="wwwroot\Captcha\Image\1.jpg" />
+		<Content Remove="wwwroot\Captcha\Image\2.jpg" />
+		<Content Remove="wwwroot\Captcha\Image\3.jpg" />
+		<Content Remove="wwwroot\Captcha\Image\4.jpg" />
+		<Content Remove="wwwroot\Captcha\Image\5.jpg" />
+		<Content Remove="wwwroot\Captcha\Image\6.jpg" />
+		<Content Remove="wwwroot\Captcha\Image\7.jpg" />
+		<Content Remove="wwwroot\Captcha\Image\8.jpg" />
+		<Content Remove="wwwroot\Template\Entity.cs.vm" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="Dockerfile">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="flow.db">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Magic.db">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<RuntimeHostConfigurationOption Include="System.Drawing.EnableUnixSupport" Value="true" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="wwwroot\Captcha\Image\1.jpg">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="wwwroot\Captcha\Image\2.jpg">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="wwwroot\Captcha\Image\3.jpg">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="wwwroot\Captcha\Image\4.jpg">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="wwwroot\Captcha\Image\5.jpg">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="wwwroot\Captcha\Image\6.jpg">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="wwwroot\Captcha\Image\7.jpg">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="wwwroot\Captcha\Image\8.jpg">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="wwwroot\Template\addForm.vue.vm">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="wwwroot\Template\Dto.cs.vm">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="wwwroot\Template\editForm.vue.vm">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="wwwroot\Template\Entity.cs.vm">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="wwwroot\Template\index.vue.vm">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="wwwroot\Template\Manage.js.vm">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="templates\" />
+		<Folder Include="wwwroot\Upload\Default\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Magic.Web.Core\Magic.Web.Core.csproj" />
+	</ItemGroup>
+
+</Project>

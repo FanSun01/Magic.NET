@@ -1,0 +1,22 @@
+{
+  "ConnectionStrings": {
+    "DefaultDbNumber": "0",
+    "DefaultDbType": "Sqlite",
+    "DefaultDbString": "Data Source=./Magic.db",
+    //"DefaultDbType": "SqlServer",
+    //"DefaultDbString": "Server=.;Database=MagicCodeFirst;User=sa;Password=123456;MultipleActiveResultSets=True;",
+    //"DefaultDbType": "MySql",
+    //"DefaultDbString": "Data Source=localhost;Database=magic;User ID=root;Password=123456;pooling=true;port=3306;sslmode=none;CharSet=utf8;Convert Zero Datetime=True;Allow Zero Datetime=True;",
+    "DbConfigs": [
+      {
+        "DbNumber": "1",
+        "DbType": "Sqlite",
+        "DbString": "Data Source=./flow.db"
+      }
+    ]
+  }
+  //"Sqlite": "Data Source=./Magic.db"
+  //"SqlServer": "Server=.;Database=Magic;User=sa;Password=123456;MultipleActiveResultSets=True;",
+  //"MySql": "Data Source=localhost;Database=Magic;User ID=root;Password=123456;pooling=true;port=3306;sslmode=none;CharSet=utf8;Convert Zero Datetime=True;Allow Zero Datetime=True;"
+
+}
